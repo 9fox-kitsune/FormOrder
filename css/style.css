@@ -2,20 +2,22 @@
 
 :root {
   --white: #ffffff;
-  --green: #378319;
-  --black: #000000;
-  --gray: #999797;
-  --shadow-gray: #cccbcb;
+  --green: #428A60;
+  --black: #212121;
+  --lite-gray: #F8F8F8;
+  --shadow-gray: #F4F4F4;
+  --border-gray: #E4E4E4;
 }
 
 /* Global */
 
-body {
-  min-width: 450px;
+.page-body {
+  min-width: 1200px;
+  min-height: 100%;
   margin: 0;
   padding: 0;
   font-size: 14px;
-  line-height: 21px;
+  line-height: 18px;
   font-weight: 700;
   color: var(--black);
   background-color: var(--shadow-gray);
@@ -25,7 +27,8 @@ body {
 /* Form */
 
 .wrapper {
-  min-width: 350px;
+  position: relative;
+  width: 850px;
 }
 
 
@@ -36,7 +39,19 @@ body {
 }
 
 .logo {
+  display: ;
   background-color: var(--green);
+}
+
+.logo h3,
+.logo p {
+  font-size: 18px;
+  line-height: 23px;
+  color: var(--white);
+}
+
+.logo p {
+  text-transform: uppercase;
 }
 
 .orderer-information {
