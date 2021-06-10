@@ -1,0 +1,69 @@
+/* Variables */
+
+:root {
+  --white: #ffffff;
+  --green: #378319;
+  --black: #000000;
+  --gray: #999797;
+  --shadow-gray: #cccbcb;
+}
+
+/* Global */
+
+body {
+  min-width: 450px;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 700;
+  color: var(--black);
+  background-color: var(--shadow-gray);
+}
+
+
+/* Form */
+
+.wrapper {
+  min-width: 350px;
+}
+
+
+
+.form-order {
+  display: flex;
+
+}
+
+.logo {
+  background-color: var(--green);
+}
+
+.orderer-information {
+
+}
+
+.orderer-information h2 {
+
+}
+
+.orderer-info {
+
+}
+
+.orderer-info label {
+
+}
+
+.orderer-info input {
+
+}
+
+
+.language {
+
+}
+
+.button {
+
+}
