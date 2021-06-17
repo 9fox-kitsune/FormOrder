@@ -7,40 +7,47 @@
   --lite-gray: #F8F8F8;
   --shadow-gray: #F4F4F4;
   --border-gray: #E4E4E4;
+  --black-lite: #4d4d4d;
 }
 
 /* Global */
 
 .page-body {
-  min-width: 1200px;
-  min-height: 100%;
   margin: 0;
   padding: 0;
   font-size: 14px;
   line-height: 18px;
   font-weight: 700;
   color: var(--black);
-  background-color: var(--shadow-gray);
 }
-
 
 /* Form */
 
 .wrapper {
-  position: relative;
-  width: 850px;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0;
+  outline: 2px solid #ff0000;
 }
 
-
-
 .form-order {
-  display: flex;
-
+  width: 560px;
+  height: 500px;
+  display: grid;
+  outline: 2px solid #1900ff;
 }
 
 .logo {
-  display: ;
-  background-color: var(--green);
+  width: 560px;
+  height: 500px;
+  outline: 2px solid #ff00b3;
+
+  background: linear-gradient(180deg, #428A60 0%, #35734F 100%);
+  box-shadow: 0px 24px 80px rgba(0, 0, 0, 0.1);
+  border-radius: 1px;
+
+  display: grid;
+  grid-template-rows: auto auto auto;
 }
 
 .logo h3,
@@ -48,22 +55,42 @@
   font-size: 18px;
   line-height: 23px;
   color: var(--white);
+  outline: 2px solid #ff00b3;
 }
 
 .logo p {
   text-transform: uppercase;
 }
 
-.orderer-information {
+.logo img {
+  outline: 2px solid #ff00b3;
+}
 
+
+.orderer-information {
+  width: 400px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  outline: 2px solid #00ff37;
 }
 
 .orderer-information h2 {
-
+  outline: 2px solid #001aff;
 }
 
 .orderer-info {
 
+  display: grid;
+  outline: 2px solid #001aff;
+}
+
+.orderer-info-name {
+  width: 400px;
+}
+
+.orderer-info-phone {
+  width: 250px;
 }
 
 .orderer-info label {
@@ -76,9 +103,39 @@
 
 
 .language {
-
+  width: 100px;
+  outline: 2px solid #001aff;
 }
 
 .button {
+  width: 400px;
+  outline: 2px solid #001aff;
+}
 
+/* .button {
+  width: 110px;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  color: var(--basic-white);
+  vertical-align: middle;
+  text-transform: uppercase;
+  padding: 3px 5px;
+  background-color: var(--basic-blue);
+  border: none;
+  cursor: pointer;
+} */
+
+/* Form adaptation */
+
+@media (max-width: 320px) {
+  .wrapper {
+    margin: 20px auto;
+    max-width: 320px;
+    width:100%;
+
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
