@@ -13,33 +13,36 @@
 
   <body class="page-body">
     <main class="wrapper">
-
+      <div class="form">
         <form class="form-order" action="./php/formOrder.php" method="post">
           <div class="logo">
             <h3>Reduslim</h3>
-
-            <img src="/img/imageReduslim.png" alt="Reduslim ECO logo">
+            <img src="./img/imageReduslim.png" width="400" alt="Reduslim ECO logo">
             <p>Eco</p>
           </div>
 
           <div class="orderer-information">
-            <h2>Сделай шаг к выздоровлению</h2>
-            <p class="orderer-info orderer-info-name">
-              <label for="name-orderer">Ваше имя</label>
-              <input id="name-orderer" type="text" name="name" placeholder="Алексей">
-            </p>
-            <p class="orderer-info orderer-info-phone">
-              <label for="phone-orderer">Ваш телефон</label>
-              <input id="phone-orderer" type="text" name="name" placeholder="+7 (123) 456-78-90">
-            </p>
-            <select class="language" name="language">
-              <option value="ru" selected>Ru</option>
-              <option value="eng">Eng</option>
-            </select>
-            <button class="button" type="submit">Заказать</button>
+            <h2>Сделай шаг<br> к выздоровлению</h2>
+            <div class="orderer-info">
+              <p class="orderer-info-name">
+                <label for="name-orderer">Ваше <b>имя</b></label>
+                <input id="name-orderer" type="text" name="name" placeholder="Алексей">
+              </p>
+              <p class="orderer-info-phone">
+                <label for="phone-orderer">Ваш <b>телефон</b></label>
+                <input id="phone-orderer" type="text" name="name" placeholder="+7 (123) 456-78-90">
+              </p>
+              <ul class="language">
+                <li class="lang-selected">Ru<img src="./img/ru.png"></li>
+                <li class="over-lang">Eng<img src="./img/ru.png"></li>
+                <li class="over-lang">Eng<img src="./img/ru.png"></li>
+                <li class="over-lang">Eng<img src="./img/ru.png"></li>
+              </ul>
+              <button class="button" type="submit">Заказать</button>
+            </div>
           </div>
         </form>
-
+      </div>
     </main>
   </body>
 </html>

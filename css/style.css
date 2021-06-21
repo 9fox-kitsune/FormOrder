@@ -18,28 +18,35 @@
   font-size: 14px;
   line-height: 18px;
   font-weight: 700;
+  text-transform: uppercase;
   color: var(--black);
+  outline: 2px solid #ff0000;
 }
 
 /* Form */
 
 .wrapper {
-  max-width: 960px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0;
   outline: 2px solid #ff0000;
 }
 
+.form {
+  max-width: 960px;
+  margin: 0;
+  padding: 120px;
+  outline: 2px solid #ff0000;
+}
+
 .form-order {
-  width: 560px;
-  height: 500px;
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
   outline: 2px solid #1900ff;
 }
 
 .logo {
-  width: 560px;
-  height: 500px;
+  width: 480px;
   outline: 2px solid #ff00b3;
 
   background: linear-gradient(180deg, #428A60 0%, #35734F 100%);
@@ -47,50 +54,73 @@
   border-radius: 1px;
 
   display: grid;
-  grid-template-rows: auto auto auto;
+  grid-template-rows: auto auto;
 }
 
 .logo h3,
 .logo p {
+  margin: 0;
+  padding: 15px;
   font-size: 18px;
   line-height: 23px;
   color: var(--white);
+  z-index: 1;
   outline: 2px solid #ff00b3;
 }
 
+.logo h3 {
+  text-transform: none;
+}
+
 .logo p {
-  text-transform: uppercase;
+  vertical-align: bottom;
 }
 
 .logo img {
+
+  padding-left: 50px;
+  position: absolute;
   outline: 2px solid #ff00b3;
 }
 
 
 .orderer-information {
-  width: 400px;
-  margin: auto;
+  width: 480px;
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-start;
   outline: 2px solid #00ff37;
 }
 
 .orderer-information h2 {
+  margin: 0 auto;
+  font-size: 21px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: none;
   outline: 2px solid #001aff;
 }
 
 .orderer-info {
-
+  margin: 0 auto;
   display: grid;
-  outline: 2px solid #001aff;
+  gap: 5px;
+  outline: 2px solid #ff8800;
+}
+
+.orderer-info b {
+  color: var(--green);
 }
 
 .orderer-info-name {
-  width: 400px;
+  display: grid;
+  outline: 2px solid #1b7e02;
 }
 
 .orderer-info-phone {
-  width: 250px;
+  display: grid;
+  outline: 2px solid #1b7e02;
 }
 
 .orderer-info label {
@@ -103,13 +133,38 @@
 
 
 .language {
-  width: 100px;
-  outline: 2px solid #001aff;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-transform: uppercase;
+  text-align: start;
+  outline: 2px solid #1b7e02;
 }
 
+/* скрываем выпадающие списки по умолчанию
+			 * и задаем абсолютное позиционирование
+       .over-lang {
+        display: none;
+        position: absolute;
+        top: 100%;
+    }
+
+    .over-lang:active {
+        display:inherit;
+    }
+
+     первый уровень выпадающего списка
+    .language li {
+        min-width:170px;
+        float:none;
+        display:list-item;
+        position: relative;
+    }  */
+
+
 .button {
-  width: 400px;
-  outline: 2px solid #001aff;
+
+  outline: 2px solid #1b7e02;
 }
 
 /* .button {
@@ -128,7 +183,7 @@
 
 /* Form adaptation */
 
-@media (max-width: 320px) {
+/* @media (max-width: 320px) {
   .wrapper {
     margin: 20px auto;
     max-width: 320px;
@@ -138,4 +193,4 @@
     flex-direction: column;
     align-items: flex-start;
   }
-}
+} */
