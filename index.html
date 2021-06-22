@@ -4,48 +4,50 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Форма заказа</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style_mobil.css">
+    <link rel="stylesheet" href="css/style.css">
 
-    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic;display=swap"> -->
-    <!--
-    <link rel="manifest" href="manifest.webmanifest"> -->
+    <!--  <link rel="manifest" href="manifest.webmanifest"> -->
   </head>
 
   <body class="page-body">
     <div class="wrapper">
-      <main class="main-conteiner">
-        <form class="form-order" action="./php/formOrder.php" method="post">
-          <div class="logo">
-            <h3>Reduslim</h3>
-            <p>Eco</p>
-            <img src="./img/imageReduslim.png" alt="Reduslim ECO logo">
-          </div>
+      <main class="main-contaner">
 
-          <div class="orderer-information">
-            <h2>Сделай шаг<br> к выздоровлению</h2>
-            <div class="orderer-info">
-              <p class="orderer-info-name">
-                <label for="name-orderer">Ваше <b>имя</b></label>
-                <input id="name-orderer" type="text" name="name" placeholder="Алексей">
-              </p>
-              <p class="orderer-info-phone">
-                <label for="phone-orderer">Ваш <b>телефон</b></label>
-                <input id="phone-orderer" type="text" name="name" placeholder="+7 (123) 456-78-90">
-              </p>
-              <select class="language">
-                <option class="ru" selected>Ru</option>
-                <option class="eng">Eng</option>
-              </select>
-              <button class="button" type="submit">Заказать</button>
-            </div>
+        <section class="logo">
+          <h3>Reduslim</h3>
+          <p>Eco</p>
+          <img src="./img/imageReduslim.png" alt="Reduslim ECO logo">
+        </section>
+
+        <form class="orderer-information" action="./php/formOrder.php" method="post">
+          <h1>Сделай шаг<br> к выздоровлению</h1>
+          <div class="orderer-info">
+            <p class="orderer-info-name">
+              <label for="name-orderer">Ваше <b>имя</b></label>
+              <input id="name-orderer" type="text" name="name" placeholder="Алексей">
+            </p>
+            <p class="orderer-info-phone">
+              <label for="phone-orderer">Ваш <b>телефон</b></label>
+              <input id="phone-orderer" type="text" name="name" placeholder="+7 (123) 456-78-90">
+            </p>
+            <select class="language">
+              <option class="ru" selected>Ru</option>
+              <option class="eng">Eng</option>
+            </select>
+            <button class="button" type="submit">
+              Заказать<img class="icon-next" src="./img/arrow.svg" width="17px" height="11px"></img>
+            </button>
           </div>
         </form>
-        <div class="footer">
+        
+        <section class="footer-mobil">
           <p>Trusted</p>
           <img src="" alt="lock">
           <p>Secure</p>
-        </div>
+        </section>
+
       </main>
     </div>
   </body>
