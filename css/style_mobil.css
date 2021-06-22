@@ -22,93 +22,77 @@
   color: var(--black);
 }
 
-/* Form */
-
 .wrapper {
-  max-width: 1200px;
+  position: relative;
+  width: 320px;
   margin: 0 auto;
-  padding: 0;
   background: var(--border-gray);
-  outline: 2px solid #ff0000;
+  outline: 2px solid #0004ff;
 }
 
-.form {
-  max-width: 960px;
-  margin: 0;
-  padding: 120px;
+/* Form */
+
+.main-conteiner {
+  padding: 50px 0;
+  background: var(--white);
 }
 
 .form-order {
-  display: flex;
-  background: var(--white);
+  flex-wrap: wrap;
+
 }
 
 /***   LOGO   ***/
 
 .logo {
-  width: 480px;
-  outline: 2px solid #ff00b3;
-
-  background: linear-gradient(180deg, #428A60 0%, #35734F 100%);
-  /* box-shadow: 0px 24px 80px rgba(0, 0, 0, 0.1);
-  border-radius: 1px; */
-
+  padding: 20px 0;
   display: flex;
-  flex-direction: column;
-
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background: none;
 }
 
 .logo h3,
 .logo p {
-  margin: 0;
-  padding: 15px;
-  font-size: 18px;
-  line-height: 23px;
-  color: var(--white);
-  z-index: 1;
-  outline: 2px solid #ff00b3;
+  color: var(--black);
 }
 
 .logo h3 {
+  padding-left: 10px;
   text-transform: none;
 }
 
 .logo p {
-  vertical-align: bottom;
+  padding-right: 10px;
 }
 
 .logo img {
-
-  padding-left: 30px;
-  position: absolute;
-  outline: 2px solid #ff00b3;
+  width: 80%;
+  padding-left: 40px;
 }
 
 /***   ORDERER INFO   ***/
 
 .orderer-information {
-  width: 480px;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
-
-  outline: 2px solid #ff0000;
+  flex-grow: 1;
 }
 
 .orderer-information h2 {
-  width: 300px;
-  margin: 0;
-  padding: 15px 90px;
+  margin: 0 auto;
+  padding: 15px 10px;
   font-size: 30px;
   line-height: 39px;
   text-align: center;
   text-transform: none;
-  background: var(--lite-gray);
+  background: none;
 }
 
 .orderer-info {
-  width: 300px;
   margin: 0;
-  padding: 40px 90px;
+  padding: 20px 10px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -159,10 +143,6 @@
   border-radius: 5px;
 }
 
-/* .ru {
-  background-image: url("../img/ru.png");
-} */
-
 .button {
   width: 300px;
   margin-top: 10px;
@@ -177,12 +157,14 @@
 }
 
 .footer {
-  visibility: hidden;
-  position: absolute;
+  visibility:visible;
+  position: relative;
+  text-transform: none;
+  display: flex;
+  justify-content: center;
+  background: var(--lite-gray);
+
+
 }
 
-/* Form adaptation */
 
-@media (max-width: 320px) {
-
-}

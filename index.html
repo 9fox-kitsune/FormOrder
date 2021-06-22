@@ -2,9 +2,10 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Форма заказа</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style_mobil.css">
 
     <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic;display=swap"> -->
     <!--
@@ -12,13 +13,13 @@
   </head>
 
   <body class="page-body">
-    <main class="wrapper">
-      <div class="form">
+    <div class="wrapper">
+      <main class="main-conteiner">
         <form class="form-order" action="./php/formOrder.php" method="post">
           <div class="logo">
             <h3>Reduslim</h3>
-            <img src="./img/imageReduslim.png" width="400" alt="Reduslim ECO logo">
             <p>Eco</p>
+            <img src="./img/imageReduslim.png" alt="Reduslim ECO logo">
           </div>
 
           <div class="orderer-information">
@@ -32,17 +33,20 @@
                 <label for="phone-orderer">Ваш <b>телефон</b></label>
                 <input id="phone-orderer" type="text" name="name" placeholder="+7 (123) 456-78-90">
               </p>
-              <ul class="language">
-                <li class="lang-selected">Ru<img src="./img/ru.png"></li>
-                <li class="over-lang">Eng<img src="./img/ru.png"></li>
-                <li class="over-lang">Eng<img src="./img/ru.png"></li>
-                <li class="over-lang">Eng<img src="./img/ru.png"></li>
-              </ul>
+              <select class="language">
+                <option class="ru" selected>Ru</option>
+                <option class="eng">Eng</option>
+              </select>
               <button class="button" type="submit">Заказать</button>
             </div>
           </div>
         </form>
-      </div>
-    </main>
+        <div class="footer">
+          <p>Trusted</p>
+          <img src="" alt="lock">
+          <p>Secure</p>
+        </div>
+      </main>
+    </div>
   </body>
 </html>
