@@ -16,6 +16,7 @@
   margin: 0;
   padding: 0;
   font-family: 'Montserrat', Arial, sans-serif;
+  font-style: normal;
   font-size: 14px;
   line-height: 18px;
   font-weight: 600;
@@ -41,39 +42,41 @@
 /***   LOGO   ***/
 
 .logo {
-  width: 560px;
-  outline: 2px solid #ff00b3;
+  min-width: 560px;
   background: linear-gradient(180deg, #428A60 0%, #35734F 100%);
   box-shadow: 0px 24px 80px rgba(0, 0, 0, 0.1);
   border-radius: 1px;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: 80% 20%;
 }
 
 .logo h3,
 .logo p {
   margin: 0;
-  padding: 15px;
+  padding-left: 40px;
   font-size: 18px;
   line-height: 23px;
   font-weight: 700;
   color: var(--white);
-  z-index: 1;
-  outline: 2px solid #ff00b3;
 }
 
 .logo h3 {
+  padding-top: 41px;
   text-transform: none;
 }
 
 .logo p {
-  vertical-align: bottom;
+  padding-top: 43px;
 }
 
 .logo img {
-  padding-left: 30px;
+  margin-top: 72px;
+  padding-top: 140px;
+  padding-left: 57px;
+  padding-bottom: 5px;
   position: absolute;
-  outline: 2px solid #ff00b3;
+  background: no-repeat url("../img/circle.png");
+  background-position-x: 20px;
 }
 
 /***   ORDERER INFO   ***/
@@ -134,6 +137,9 @@
 .orderer-info input {
   height: 50px;
   padding: 16px 20px;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 600;
   background: var(--lite-gray);
   border: 1px solid var(--border-gray);
   box-sizing: border-box;
@@ -150,6 +156,9 @@
   margin-top: 26px;
   margin-left: 20px;
   padding: 16px;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 600;
   list-style: none;
   text-transform: uppercase;
   text-align: center;
@@ -162,7 +171,10 @@
 .button {
   width: 320px;
   margin-bottom: 8px;
-  padding: 12px 20px;
+  padding: 11px 0;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 600;
   text-align: center;
   color: var(--white);
   background: var(--green);
@@ -173,10 +185,10 @@
 }
 
 .icon-next {
-  padding-left: 12px;
+  padding-left: 5px;
 }
 
-.footer-mobil {
+.footer-mobile {
   visibility: hidden;
   position: absolute;
 }
@@ -184,5 +196,118 @@
 /* Form adaptation */
 
 @media (max-width: 320px) {
+  .wrapper {
+    max-width: 320px;
+  }
 
+  .main-contaner {
+    max-width: 320px;
+    padding: 60px 0;
+    display: grid;
+  }
+
+  /***   LOGO   ***/
+
+  .logo {
+    min-width: 280px;
+    padding-top: 41px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background: var(--white);
+    box-shadow: none;
+  }
+
+  .logo h3,
+  .logo p {
+    padding: 0 20px;
+    color: var(--black);
+  }
+
+  .logo img {
+    width: 70%;
+    margin-top: 8px;
+    padding-top: 48px;
+    padding-left: 56px;
+    padding-bottom: 32px;
+    position: relative;
+    background: no-repeat url("../img/circle.png");
+    background-position-x: 59px;
+    background-size: 72%;
+  }
+
+  /***   ORDERER INFO   ***/
+
+  .orderer-information {
+    width: 100%;
+  }
+
+  .orderer-information h1 {
+    width: 280px;
+    margin: 0 auto;
+    padding-top: 37px;
+    background: none;
+    /* outline: 2px solid #0004ff; */
+
+  }
+
+  .orderer-info {
+    width: 280px;
+    padding: 27px 20px;
+  }
+
+    .orderer-info-name {
+    width: 280px;
+  }
+
+  .orderer-info-phone {
+    padding-bottom: 28px;
+  }
+
+   .orderer-info input {
+    padding: 10px;
+  }
+
+  .orderer-info-phone input {
+    width: 174px;
+  }
+
+  .language {
+    width: 96px;
+    padding: 5px;
+  }
+
+  .button {
+    width: 280px;
+    margin-bottom: 0;
+  }
+
+  .footer-mobile {
+    visibility:visible;
+    position: relative;
+    padding-top: 12px;
+    padding-bottom: 11px;
+    font-weight: 700;
+    text-transform: none;
+    display: flex;
+    justify-content: center;
+    gap: 51px;
+    background: var(--lite-gray);
+  }
+
+  .footer-mobil p {
+    margin: 0;
+  }
+
+  .lock-handle {
+    position: absolute;
+    top: 12px;
+    left: 158px;
+  }
+
+  .lock {
+    position: absolute;
+    top: 17px;
+    left: 156px;
+  }
 }

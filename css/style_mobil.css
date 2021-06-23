@@ -15,60 +15,62 @@
 .page-body {
   margin: 0;
   padding: 0;
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-style: normal;
   font-size: 14px;
   line-height: 18px;
-  font-weight: 700;
+  font-weight: 600;
   text-transform: uppercase;
   color: var(--black);
 }
 
+/* Form */
+
 .wrapper {
-  position: relative;
   width: 320px;
   margin: 0 auto;
   background: var(--border-gray);
-  outline: 2px solid #0004ff;
 }
-
-/* Form */
 
 .main-contaner {
-  padding: 50px 0;
-  background: var(--white);
-}
-
-.form-order {
-  flex-wrap: wrap;
-
+  padding: 60px 0;
+  display: grid;
 }
 
 /***   LOGO   ***/
 
 .logo {
-  padding: 20px 0;
+  padding-top: 41px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  background: none;
+  background: var(--white);
 }
 
 .logo h3,
 .logo p {
+  margin: 0;
+  padding: 0 20px;
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: 700;
   color: var(--black);
 }
 
 .logo h3 {
-  padding-left: 10px;
   text-transform: none;
 }
 
-.logo p {
-  padding-right: 10px;
-}
-
 .logo img {
-  width: 80%;
-  padding-left: 40px;
+  width: 70%;
+  margin-top: 8px;
+  padding-top: 48px;
+  padding-left: 56px;
+  padding-bottom: 32px;
+  position: relative;
+  background: no-repeat url("../img/circle.png");
+  background-position-x: 59px;
+  background-size: 72%;
 }
 
 /***   ORDERER INFO   ***/
@@ -77,14 +79,15 @@
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  flex-grow: 1;
+  background: var(--white);
 }
 
-.orderer-information h2 {
+.orderer-information h1 {
   margin: 0 auto;
-  padding: 15px 10px;
+  padding-top: 37px;
   font-size: 30px;
   line-height: 39px;
+  font-weight: 800;
   text-align: center;
   text-transform: none;
   background: none;
@@ -92,7 +95,7 @@
 
 .orderer-info {
   margin: 0;
-  padding: 20px 10px;
+  padding: 27px 20px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -102,38 +105,51 @@
 }
 
 .orderer-info-name {
-  width: 300px;
+  width: 280px;
   margin: 0;
-  padding-bottom: 15px;
+  padding-bottom: 20px;
   display: grid;
 }
 
 .orderer-info-phone {
   margin: 0;
-  padding-bottom: 15px;
+  padding-bottom: 28px;
   display: grid;
 }
 
 .orderer-info label {
-  padding-bottom: 5px;
+  padding-bottom: 11px;
   font-size: 12px;
-  line-height: 16px;
+  line-height: 15px;
+  font-weight: 800;
+  letter-spacing: 0.05em;
 }
 
 .orderer-info input {
-  padding: 5px;
+  height: 50px;
+  padding: 10px;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 600;
   background: var(--lite-gray);
   border: 1px solid var(--border-gray);
   box-sizing: border-box;
   border-radius: 5px;
 }
 
+.orderer-info-phone input {
+  width: 174px;
+}
+
 .language {
-  min-width: 100px;
-  height: 28px;
-  margin-top: 21px;
-  margin-left: 15px;
+  width: 96px;
+  height: 50px;
+  margin-top: 26px;
+  margin-left: 10px;
   padding: 5px;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 600;
   list-style: none;
   text-transform: uppercase;
   text-align: center;
@@ -144,9 +160,11 @@
 }
 
 .button {
-  width: 300px;
-  margin-top: 10px;
-  padding: 10px 15px;
+  width: 280px;
+  padding: 11px 0;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 600;
   text-align: center;
   color: var(--white);
   background: var(--green);
@@ -156,15 +174,36 @@
   cursor: pointer;
 }
 
-.footer {
+.icon-next {
+  padding-left: 5px;
+}
+
+.footer-mobil {
   visibility:visible;
   position: relative;
+  padding-top: 12px;
+  padding-bottom: 11px;
+  font-weight: 700;
   text-transform: none;
   display: flex;
   justify-content: center;
+  gap: 51px;
   background: var(--lite-gray);
-
-
 }
 
+.footer-mobil p {
+  margin: 0;
+}
+
+.lock-handle {
+  position: absolute;
+  top: 12px;
+  left: 158px;
+}
+
+.lock {
+  position: absolute;
+  top: 17px;
+  left: 156px;
+}
 
