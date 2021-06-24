@@ -178,7 +178,7 @@
   padding-left: 5px;
 }
 
-.footer-mobil {
+.footer-mobile {
   visibility:visible;
   position: relative;
   padding-top: 12px;
@@ -191,7 +191,7 @@
   background: var(--lite-gray);
 }
 
-.footer-mobil p {
+.footer-mobile p {
   margin: 0;
 }
 
