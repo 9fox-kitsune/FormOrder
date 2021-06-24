@@ -22,7 +22,7 @@
         </section>
 
         <form class="orderer-information" action="./php/formOrder.php" method="post">
-          <h1>Сделай шаг к выздоровлению</h1>
+          <h1>Сделай шаг <br>к выздоровлению</h1>
           <div class="orderer-info">
             <p class="orderer-info-name">
               <label for="name-orderer">Ваше <b>имя</b></label>
@@ -32,10 +32,24 @@
               <label for="phone-orderer">Ваш <b>телефон</b></label>
               <input id="phone-orderer" type="text" name="name" placeholder="+7 (123) 456-78-90">
             </p>
-            <select class="language">
-              <option class="visually-hidden lang" selected>Ru</option>
-              <option class="visually-hidden lang">Eng</option>
-            </select>
+            <ul class="language">
+              <li class="lang">
+                <a href="#">Ru
+                  <img class="flag" src="./img/ru.png" alt="ru">
+                  <img class="arrow-down-list" src="./img/arrow-down.svg" alt="list">
+                </a>
+              </li>
+              <ul class="lang-list visually-hidden">
+                <li class="lang-list-item">
+                  <a href="#">Eng</a>
+                  <img class="flag" src="./img/ru.png" alt="ru">
+                </li>
+                <li class="lang-list-item">
+                  <a href="#">Chn</a>
+                  <img class="flag" src="./img/ru.png" alt="ru">
+                </li>
+              </ul>
+            </ul>
             <button class="button" type="submit">
               Заказать
               <img class="icon-next" src="./img/arrow.svg" width="17px" height="11px"></img>

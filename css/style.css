@@ -24,6 +24,28 @@
   color: var(--black);
 }
 
+a {
+  color: var(--black);
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 /* Form */
 
 .wrapper {
@@ -156,17 +178,50 @@
   height: 50px;
   margin-top: 26px;
   margin-left: 20px;
-  padding: 16px;
+  padding: 15px;
+  padding-left: 20px;
   font-size: 14px;
   line-height: 18px;
   font-weight: 600;
   list-style: none;
   text-transform: uppercase;
-  text-align: center;
   background: var(--lite-gray);
   border: 1px solid var(--border-gray);
   box-sizing: border-box;
   border-radius: 5px;
+}
+
+.language .lang {
+  display: flex;
+}
+
+.language .flag {
+  padding-left: 10px;
+}
+
+.language .arrow-down-list {
+  padding-left: 8px;
+}
+
+.language .lang-list {
+  width: 116px;
+  top: 100%;
+  left: -21px;
+  position: relative;
+  background: var(--white);
+  border: 1px solid var(--border-gray);
+  box-sizing: border-box;
+}
+
+.language .lang-list-item {
+  left: -21px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.language .lang:active > .lang-list {
+  display: inherit;
 }
 
 .button {
@@ -243,6 +298,10 @@
     padding: 0;
     padding-top: 37px;
     background: none;
+  }
+
+  .orderer-information br {
+    display: none;
   }
 
   .orderer-info {
