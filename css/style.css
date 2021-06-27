@@ -33,19 +33,6 @@ li {
   list-style: none;
 }
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
 /* Form */
 
 .wrapper {
@@ -60,6 +47,18 @@ li {
   max-width: 1120px;
   padding: 75px 80px;
   display: flex;
+}
+
+.circle {
+  position: absolute;
+  width: 688px;
+  height: 688px;
+  left: 635px;
+  top: -19px;
+  opacity: 0.03;
+  border: 20px solid #FFFFFF;
+  box-sizing: border-box;
+  border-radius: 50%;  
 }
 
 /***   LOGO   ***/
@@ -178,21 +177,19 @@ li {
   height: 50px;
   margin-top: 26px;
   margin-left: 20px;
-  padding: 15px;
+  padding-top: 15px;
   padding-left: 20px;
   font-size: 14px;
   line-height: 18px;
   font-weight: 600;
   list-style: none;
   text-transform: uppercase;
+  display: flex;
   background: var(--lite-gray);
   border: 1px solid var(--border-gray);
   box-sizing: border-box;
   border-radius: 5px;
-}
-
-.language .lang {
-  display: flex;
+  cursor: pointer;
 }
 
 .language .flag {
@@ -200,31 +197,48 @@ li {
 }
 
 .language .arrow-down-list {
+  padding-top: 6px;
   padding-left: 8px;
 }
 
-.language .lang-list {
-  width: 116px;
-  top: 100%;
-  left: -21px;
+.language-list {
+  display: none;
+  width: 116px; 
   position: relative;
+  top: -52px;
+  left: 204px;
+  margin-bottom: -100%;
+  height: 60px;
+  overflow-y: scroll;
   background: var(--white);
   border: 1px solid var(--border-gray);
   box-sizing: border-box;
 }
 
-.language .lang-list-item {
-  left: -21px;
+.language-list .lang-list-item {
+  padding: 3px 0;
   position: relative;
+  left: -30px;
+}
+
+.lang-list-item .button-lang-item {
+  width: 80px;
   display: flex;
-  justify-content: space-between;
+  gap: 10px;
+  background: var(--white);
+  border: none;
+  cursor: pointer;
 }
 
-.language .lang:active > .lang-list {
-  display: inherit;
+.language:focus + .language-list {
+  display: block;
 }
 
-.button {
+.button-lang-item:hover {
+  background: var(--border-gray);
+}
+
+.button-next {
   width: 320px;
   margin-bottom: 8px;
   padding: 11px 0;
@@ -259,6 +273,10 @@ li {
   .main-contaner {
     padding: 60px 0;
     display: grid;
+  }
+
+  .circle {
+    display: none;
   }
 
   .logo {
@@ -328,10 +346,16 @@ li {
   .language {
     width: 96px;
     margin-left: 10px;
-    padding: 5px;
+    padding-left: 9px;
   }
 
-  .button {
+  .language-list {
+    width: 96px; 
+    top: -42px;
+    left: 184px;
+  }
+
+  .button-next {
     width: 280px;
     margin-bottom: 1px;
   }
